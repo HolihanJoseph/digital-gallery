@@ -1,6 +1,3 @@
-import React from 'react'
-
-import MasonryGallery from '../components/MasonryGallery'
 import PreviewCard from '../components/PreviewCard';
 
 const YellowstoneImages = [
@@ -32,11 +29,6 @@ const NewEnglandImages = [
   {type: 'image', src: 'https://biff-gallery-photos.s3.us-east-1.amazonaws.com/Vermont/lye-brook-trail.jpg'},
 ]
 
-const blankImageArray = [
-  {type: 'image', src: ''},
-  {type: 'image', src: ''},
-  {type: 'image', src: ''},
-];
 
 const Home = () => {
   return (

@@ -1,6 +1,4 @@
-import React from 'react'
 import { MediaItem } from './MasonryGallery'
-import Masonry from 'react-masonry-css';
 import { Link } from 'react-router-dom';
 
 import ImageWithPlaceholder from './ImageWithPlaceholder';
@@ -11,9 +9,6 @@ type Props = {
     route: string;
 }
 
-const breakpointColumns = {
-    default: 2,
-};
 
 const PreviewCard = ({title, images, route}: Props) => {
   return (

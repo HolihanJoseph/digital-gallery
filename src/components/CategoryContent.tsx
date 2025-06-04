@@ -1,4 +1,3 @@
-import React from 'react'
 
 import MasonryGallery from './MasonryGallery';
 import { MediaItem } from './MasonryGallery'

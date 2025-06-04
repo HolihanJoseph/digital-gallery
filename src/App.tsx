@@ -108,12 +108,6 @@ const NHImages = [
 ];
 
 
-const blankImageArray = [
-  {type: 'image', src: ''},
-  {type: 'image', src: ''},
-  {type: 'image', src: ''},
-];
-
 function App() {
 
   return (

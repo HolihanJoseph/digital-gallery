@@ -1,7 +1,7 @@
 import React from 'react'
 import Masonry from 'react-masonry-css';
 
-
+import ImageWithPlaceholder from './ImageWithPlaceholder';
 
 export type MediaItem  = {
   type: string;
@@ -27,7 +27,11 @@ const MasonryGallery = ({mediaItems}: MasonryGalleryProps) => {
       {mediaItems.map((item, i) => (
         <div key={i} className="mb-4 rounded overflow-hidden shadow">
           {item.type === 'image' ? (
-            <img src={item.src} alt={`Media ${i}`} className="w-full h-auto object-cover" />
+            <ImageWithPlaceholder
+              src={item.src}
+              alt={`Media ${i}`}
+              className='w-full h-auto object-cover'
+            />
           ) : (
             <video
               controls

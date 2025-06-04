@@ -3,6 +3,8 @@ import { MediaItem } from './MasonryGallery'
 import Masonry from 'react-masonry-css';
 import { Link } from 'react-router-dom';
 
+import ImageWithPlaceholder from './ImageWithPlaceholder';
+
 type Props = {
     title: string;
     images: MediaItem[];
@@ -21,7 +23,7 @@ const PreviewCard = ({title, images, route}: Props) => {
         </div>
         <div className='grid grid-cols-2 grid-rows-2 gap-4 p-4'>
             {images.map((item, i) => (
-                <img src={item.src} alt={`Media ${i}`} className="w-full h-auto object-cover aspect-square rounded" />
+                <ImageWithPlaceholder src={item.src} alt={`Media ${i}`} className="w-full h-auto object-cover aspect-square rounded" />
             ))}
         </div>
     </Link>
